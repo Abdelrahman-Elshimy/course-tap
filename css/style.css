@@ -1,0 +1,209 @@
+/*===================================================
+
+  =  Theme Name: Course Tab
+  =  Theme Coder: Abdelrahman Lotfy
+
+  =  First Color: #04abf7
+  =  Second Color: #22e6b7
+
+*=====================================================*/
+* {
+    box-sizing: border-box;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*==================================================================================================
+
+/* Start Style Navbar  */
+.navbar-course {
+    z-index: 2;
+}
+.bg-light {
+    background-color: transparent !important;
+}
+.navbar-light .navbar-brand {
+    color: #ffffff;
+}
+.navbar-light .navbar-brand img  {
+    width: 43px;
+    height: 43px;
+}
+.navbar-light .navbar-brand .logo p{ 
+    font-size: 2rem;
+    font-weight: normal;
+}
+.navbar-light .navbar-brand .logo p span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navbar-light .navbar-brand .logo span {
+    font-size: .8rem;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    background: linear-gradient(to top right, #04abf7 20%, #22e6b7);
+    color: #ffffff;
+    border-radius: .2rem;
+    padding: .5rem 20px;
+}
+
+.navbar-nav .nav-item.last {
+    background: linear-gradient(to top right, #aaaaaa 20%, #eeeeee);
+    border-radius: .4rem;
+}
+
+/* End navbar */
+
+/* Start Style Slider  */
+.slider-course img { 
+    height: 100vh;
+}
+.slider-course .carousel-indicators li{
+    width: 3px;
+    height: 15px;
+}
+.slider-course .carousel-indicators li.active {
+    height: 20px;
+}
+.slider-course .carousel-caption .edu > span{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 4px;
+}
+.slider-course .carousel-caption .edu > span::after,
+.slider-course .carousel-caption .edu > span::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #22e6b7;
+}
+.slider-course .carousel-caption .edu > span::after {
+    left: -1rem;
+    top: 50%;
+}
+.slider-course .carousel-caption .edu > span::before {
+    right: -1rem;
+    top: 50%;
+}
+
+.slider-course .carousel-caption .edu h2 {
+    font-size: 4.5rem;
+    font-weight: normal;
+}
+.slider-course .carousel-caption .edu h2 span {
+    font-weight: bold;
+}
+.slider-course .carousel-caption button {
+    padding: 1rem 3rem;
+    background: transparent;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 2.5px solid #04abf7;
+    border-radius: .4rem;
+}
+
+
