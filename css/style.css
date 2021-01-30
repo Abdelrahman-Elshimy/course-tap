@@ -8,303 +8,446 @@
 
 *=====================================================*/
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
-    line-height:1;
+  line-height: 1;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 nav ul {
-    list-style:none;
+  list-style: none;
 }
 
-blockquote, q {
-    quotes:none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
 }
 
 del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
-input, select {
-    vertical-align:middle;
+input,
+select {
+  vertical-align: middle;
 }
 i.active {
-    color: #ffc926;
+  color: #ffc926;
 }
 .sperator-hori {
-    height: .11rem;
-    background-color: aqua;
-    width: 15%;
-    margin: 1.5rem 0;
+  height: 0.11rem;
+  background-color: aqua;
+  width: 15%;
+  margin: 1.5rem 0;
 }
 .sperator {
-    width: 1px; 
-    background-color: #eeeeee; 
-    margin: 0 10px;
+  width: 1px;
+  background-color: #eeeeee;
+  margin: 0 10px;
 }
 .btn-grediant {
-    background: linear-gradient(to top right, #04abf7 20%, #22e6b7);
-    color: #ffffff;
-    border-radius: .2rem;
-    padding: .5rem 20px;
+  background: linear-gradient(to top right, #04abf7 20%, #22e6b7);
+  color: #ffffff;
+  border-radius: 0.2rem;
+  padding: 0.5rem 20px;
 }
-.edu > span{
-    font-size: .9rem;
-    text-transform: uppercase;
-    font-weight: normal;
-    position: relative;
-    overflow: hidden;
-    color: #aaaaaa;
-    letter-spacing: 4px;
+.edu > span {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  position: relative;
+  overflow: hidden;
+  color: #aaaaaa;
+  letter-spacing: 4px;
 }
 .edu > span::after,
 .edu > span::before {
-    content: '';
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: #22e6b7;
-    
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #22e6b7;
 }
 .edu > span::after {
-    left: -1rem;
-    top: 40%;
+  left: -1rem;
+  top: 40%;
 }
 .edu > span::before {
-    right: -1rem;
-    top: 40%;
+  right: -1rem;
+  top: 40%;
 }
-.logo p{ 
-    font-size: 2rem;
-    font-weight: normal;
+.logo p {
+  font-size: 2rem;
+  font-weight: normal;
 }
-.logo p span{
-    font-weight: bold;
+.logo p span {
+  font-weight: bold;
 }
 
 /*==================================================================================================
 
 /* Start Style Navbar  */
 .navbar-course {
-    z-index: 2;
+  z-index: 2;
 }
 
 .bg-light {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 .navbar-light .navbar-brand {
-    color: #ffffff;
+  color: #ffffff;
 }
-.navbar-light .navbar-brand img  {
-    width: 43px;
-    height: 43px;
+.navbar-light .navbar-brand img {
+  width: 43px;
+  height: 43px;
 }
 
 .navbar-light .navbar-brand .logo .text-logo > span {
-    font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff !important;
-    text-transform: uppercase;
-    font-weight: 500 !important;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  font-weight: 500 !important;
 }
 .navbar-light .navbar-nav .nav-link.active {
-    background: linear-gradient(to top right, #04abf7 20%, #22e6b7);
-    color: #ffffff;
-    border-radius: .2rem;
-    padding: .5rem 20px;
+  background: linear-gradient(to top right, #04abf7 20%, #22e6b7);
+  color: #ffffff;
+  border-radius: 0.2rem;
+  padding: 0.5rem 20px;
 }
 
 .navbar-nav .nav-item.last {
-    background: linear-gradient(to top right, #aaaaaa 20%, #eeeeee);
-    border-radius: .4rem;
+  background: linear-gradient(to top right, #aaaaaa 20%, #eeeeee);
+  border-radius: 0.4rem;
 }
 
 /* End navbar */
 
 /* Start Style Slider  */
-.slider-course img { 
-    height: 100vh;
+.slider-course img {
+  height: 100vh;
 }
 .slider-course .carousel-control-next .icon,
-.slider-course .carousel-control-prev .icon{
-    background-color: #424242;
-    padding: 15px;
+.slider-course .carousel-control-prev .icon {
+  background-color: #424242;
+  padding: 15px;
 }
 .slider-course .carousel-control-next-icon,
 .slider-course .carousel-control-prev-icon {
-    
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
-.slider-course .carousel-indicators li{
-    width: 3px;
-    height: 15px;
+.slider-course .carousel-indicators li {
+  width: 3px;
+  height: 15px;
 }
 .slider-course .carousel-indicators li.active {
-    height: 20px;
+  height: 20px;
 }
-
 
 .slider-course .carousel-caption .edu > span {
-    font-size: 1.2rem;
-    color: white;
+  font-size: 1.2rem;
+  color: white;
 }
 .slider-course .carousel-caption .edu > span::after {
-    left: -1rem;
-    top: 50%;
+  left: -1rem;
+  top: 50%;
 }
 .slider-course .carousel-caption .edu > span::before {
-    right: -1rem;
-    top: 50%;
+  right: -1rem;
+  top: 50%;
 }
 .slider-course .carousel-caption .edu h2 {
-    font-size: 4.5rem;
-    font-weight: normal;
+  font-size: 4.5rem;
+  font-weight: normal;
 }
 .slider-course .carousel-caption .edu h2 span {
-    font-weight: bold;
+  font-weight: bold;
 }
 .slider-course .carousel-caption button {
-    padding: 1rem 3rem;
-    background: transparent;
-    color: #ffffff;
-    font-weight: 500;
-    text-transform: uppercase;
-    border: 2.5px solid #04abf7;
-    border-radius: .4rem;
+  padding: 1rem 3rem;
+  background: transparent;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 2.5px solid #04abf7;
+  border-radius: 0.4rem;
 }
 
 /* End Style Slider  */
 
 /* Start style search for courses */
-.search-course .row > div .content p{
-    font-weight: bold;
+.search-course .row > div .content p {
+  font-weight: bold;
 }
 .search-course .row > div .content span {
-    color: #999999;
+  color: #999999;
 }
 .search-course .content-image {
-    position: relative;
-    overflow: hidden;
-    
+  position: relative;
+  overflow: hidden;
 }
 .search-course .content-image img {
-    transition: all .5s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
+
 .search-course .col-lg-4:hover img {
-    transform: scale(1.5, 1.5) rotate(.1turn);
+  transform: scale(1.5, 1.5) rotate(0.1turn);
 }
 .search-course .content-image .badge {
-    left: 1rem;
-    top: 1rem;
+  left: 1rem;
+  top: 1rem;
 }
 .search-course .content-details {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
-.search-course .content-details > p{
-    font-weight: 500;
+.search-course .content-details > p {
+  font-weight: 500;
 }
 .search-course .content-details > p:first-child {
-    color: #04abf7;
+  color: #04abf7;
 }
 .search-course .course-name {
-    font-size: 1.6rem;
-    line-height: 2.3rem;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
 }
-.search-course .course-name .tender{
-    color: #ffffff;
-    background-color: #ff5c26;
-    padding: 0px 10px 3px 10px;
-    border-radius: 2px;
-    font-size: 1rem;
+.search-course .course-name .tender {
+  color: #ffffff;
+  background-color: #ff5c26;
+  padding: 0px 10px 3px 10px;
+  border-radius: 2px;
+  font-size: 1rem;
 }
-.search-course .course-ach > div{
-    background-color: #f7f7f7;
-    margin-right: 1rem;
-    padding: .5rem 1rem;
-    border-radius: .3rem;
-    color: #cccccc;
-    font-weight: 500;
+.search-course .course-ach > div {
+  background-color: #f7f7f7;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  color: #cccccc;
+  font-weight: 500;
 }
 /* End style search for courses */
 
+/* Start style Abdout courses */
+.about-course {
+  background-color: #f7f7f7;
+  padding-top: 3rem;
+}
+.about-course .content-phone-form {
+  width: 100%;
+  height: 1000px;
+  background-image: url("../img/phone.png");
+  z-index: 2;
+  height: 1000px;
+  padding: 0px 30px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+  right: -20%;
+}
 
+.about-course .content-phone-form .content-form {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 161px;
+  left: 56px;
+}
+.about-course .content-phone-form .content-form input,
+.about-course .content-phone-form .content-form textarea,
+.about-course .content-phone-form .content-form select {
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+}
+.about-course .content-phone-form .content-form button {
+  background-color: #ff5c26;
+  border: none;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+}
+.about-course .text-about .first {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: #333333;
+}
+.about-course .text-about .second {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #333333;
+  line-height: 1.8rem;
+}
+.about-course .text-about ul {
+  list-style: none;
+}
+.about-course .text-about ul li {
+  margin-bottom: 1rem;
+  color: #777777;
+  font-weight: 500;
+}
+.about-course .text-about ul li span:first-child {
+  width: 10px;
+  height: 10px;
+  background-color: #22e6b7;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.about-course .text-about a {
+  text-decoration: none;
+  padding: 0.7rem 2.5rem;
+}
+.about-course .text-about a:hover {
+  color: #ffffff !important;
+  text-transform: uppercase;
+}
+/* End style Abdout courses */
